@@ -1,0 +1,25 @@
+<section id="wrapper">
+    <div class="symbol">
+        <h3 (click)="rotate(0)">{{ myArray[currWords[0]] }}</h3>
+    </div>
+    <div class="symbol">
+        <h3 (click)="rotate(1)">{{ myArray[currWords[1]] }}</h3>
+    </div>
+    <div class="symbol">
+        <h3 (click)="rotate(2)">{{ myArray[currWords[2]] }}</h3>
+    </div>
+    <div class="symbol">
+        <h3 (click)="rotate(3)">{{ myArray[currWords[3]] }}</h3>
+    </div>
+    <div class="symbol">
+        <h3 (click)="rotate(4)">{{ myArray[currWords[4]] }}</h3>
+    </div>
+</section>
+
+<div *ngIf="isCombinationCorrect" class="success">
+    <h1>You did it!</h1>
+</div>
+
+<div *ngIf="isCombinationCorrect" class="refresh">
+    <button (click)="exit()">Reset</button>
+</div>
